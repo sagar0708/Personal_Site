@@ -4,6 +4,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: 'Nunito Sans', sans-serif;
+  scroll-behavior: smooth;
 }
 /*======================= common css ==================================*/
 img{
@@ -28,6 +29,16 @@ img{
 .four-box{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+}
+h2.title{
+  font-size: 65px;
+  line-height: 1;
+  text-transform: capitalize;
+  -webkit-text-stroke: 1px #319be6;
+  color: transparent;
+  text-align: center;
+  margin: 0 0 25px;
+  letter-spacing: 2px;
 }
 /*======================= header ======================================*/
 .header .sidebar .menu-icon{
@@ -111,7 +122,7 @@ img{
   background-size: cover;
   height: 110vh;
   position: relative;
-  z-index: -999;
+  z-index: 999;
 }
 .hero .overlay{
   position: absolute;
@@ -215,7 +226,7 @@ img{
   font-size: 15px;
   font-weight: bold;
 }
-.about-detail a{
+a.contact-btn{
   display: inline-block;
   text-decoration: none;
   background-color: #319be6;
@@ -230,7 +241,7 @@ img{
   position: relative;
   z-index: 2;
 }
-.about-detail a::before{
+a.contact-btn::before{
   content: "";
   background: linear-gradient(135deg, #16c0f0 0%, #319be6 100%);
   position: absolute;
@@ -243,7 +254,7 @@ img{
   transform: translate(-50%, -50%) scale(0);
   transition: all .4s ease-in-out;
 }
-.about-detail a:hover::before{
+a.contact-btn:hover::before{
   transform: translate(-50%, -50%) scale(1);
 }
 .about-detail .full-detail{

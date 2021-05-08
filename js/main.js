@@ -2,6 +2,9 @@ $(document).ready(function(){
   $(".menu-icon").on("click", function(){
     $(".sidebar").toggleClass("active");
   });
+  $(".verticle-nav .menu-list li a").on("click", function(){
+    $(".sidebar").toggleClass("active");
+  })
 });
 function myMap() {
   var myCenter = new google.maps.LatLng(21.502609,70.419346)
