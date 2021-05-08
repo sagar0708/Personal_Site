@@ -41,14 +41,14 @@ img{
   outline: none;
   cursor: pointer;
   z-index: 999999;
-  transition: .5s all;
+  transition: 1s all;
 }
 .header .sidebar .menu-icon .bar{
   display: block;
   width: 28px;
   height: 2px;
   background-color: #16c0f0;
-  transition: .5s all;
+  transition: 1s all;
 }
 .header .sidebar .menu-icon .bar:first-child{
   width: 14px;
@@ -77,11 +77,11 @@ img{
   bottom: 0;
   z-index: 99999;
   margin: auto;
-  background-color: rgba(0,0,0,0.6);
+  background-color: #000;
   box-shadow: 0 0 10px rgb(0 0 0 / 10%);
   padding: 85px 10px;
   list-style: none;
-  transition: 0.5s all;
+  transition: 1s all;
 }
 .sidebar.active .verticle-nav .menu-list {
   left: 0;
@@ -405,6 +405,9 @@ img{
   padding: 140px 0 60px;
   background-color: #F7F7F7;
 }
+.contact .two-box{
+  column-gap: 20px;
+}
 .contact > svg{
   position: absolute;
   width: 100%;
@@ -413,4 +416,33 @@ img{
 }
 .contact > svg *{
   fill: #fff;
+}
+.contact .contact-detail{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  height: fit-content;
+}
+.contact .contact-detail h6{
+  font-size: 14px;
+  color: #319be6;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.contact .contact-detail p{
+  font-size: 16px;
+  color: #000;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.contact .contact-detail p:last-child{
+  margin-bottom: 0;
+}
+#map {
+  height: 400px;
+  width: 100%;
 }
