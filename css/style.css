@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;900&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito Sans', sans-serif;
+}
+/*======================= common css ==================================*/
+img{
+  max-width: 100%;
+}
+.container{
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.two-box{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.four-box{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+/*======================= header ======================================*/
+.header .sidebar .menu-icon{
+  position: fixed;
+  top: 15px;
+  left: 100px;
+  padding: 10px 0;
+  z-index: 2;
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  z-index: 999999;
+  transition: .5s all;
+}
+.header .sidebar .menu-icon .bar{
+  display: block;
+  width: 28px;
+  height: 2px;
+  background-color: #16c0f0;
+  transition: .5s all;
+}
+.header .sidebar .menu-icon .bar:first-child{
+  width: 14px;
+  margin-right: 14px;
+}
+.header .sidebar .menu-icon .bar:nth-child(2){
+  margin: 6px 0;
+}
+.header .sidebar .menu-icon .bar:last-child{
+  width: 14px;
+  margin-left: 14px;
+}
+.header .sidebar.active .menu-icon{
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.header .sidebar.active .menu-icon .bar:first-child,
+.header .sidebar.active .menu-icon .bar:last-child{
+  -webkit-transform: rotate(-90deg) translateY(7px);
+  -moz-transform: rotate(-90deg) translateY(7px);
+  -ms-transform: rotate(-90deg) translateY(7px);
+  -o-transform: rotate(-90deg) translateY(7px);
+  transform: rotate(-90deg) translateY(7px);
+  margin-right: 0;
+  margin-left: 0;
+}
+.sidebar .verticle-nav .menu-list {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  bottom: 0;
+  z-index: 99999;
+  margin: auto;
+  background-color: rgba(0,0,0,0.6);
+  box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+  padding: 85px 10px;
+  list-style: none;
+  transition: 0.5s all;
+}
+.sidebar.active .verticle-nav .menu-list {
+  left: 0;
+}
+.sidebar.active .verticle-nav .menu-list li a{
+  color: #319be6;
+  text-decoration: none;
+  font-size: 16px;
+  display: block;
+  text-align: center;
+  padding: 7px 5px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  transition: 0.3s all;
+  margin: 5px 0;
+}
+.sidebar.active .verticle-nav .menu-list li:hover a{
+  color: #ccc;
+}
+/* ================================= hero ======================================== */
+.hero{
+  background-image: url('../images/s.jpg');
+  background-position: revert;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 110vh;
+  position: relative;
+  z-index: -999;
+}
+.hero .overlay{
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  z-index: -1;
+}
+.intro{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  height: 100%;
+  z-index: 1;
+}
+.intro .sub-title{
+  color: #c3c0c0;
+  font-size: 22px;
+  font-weight: 600;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  margin: 0;
+}
+.intro .title-name{
+  color: #eee;
+  font-size: 85px;
+  margin: 30px 0;
+  text-transform: capitalize;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: 2px;
+}
+.intro .profession-title{
+  color: #c3c0c0;
+  font-size: 22px;
+  font-weight: 600;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  margin: 0;
+  margin-bottom: 50px;
+}
+.intro .profession-title span{
+  color: #16c0f0;
+}
+/* ================================= about ======================================== */
+.about{
+  padding: 60px;
+  position: relative;
+}
+.about svg{
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  transform: rotate(180deg) translateY(100%);
+}
+.about svg *{
+  fill: #fff;
+}
+.about .tow-box-item:first-child{
+  text-align: center;
+}
+.about-img img{
+  max-width: 50%;
+}
+.about-detail{
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.about-detail h6{
+  color: #434343;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: 400;
+}
+.about-detail h4{
+  display: inline-block;
+  color: #fff;
+  background-color: #319be6;
+  padding: 10px;
+  font-size: 32px;
+  text-transform: uppercase;
+  margin: 15px 0 30px;
+  letter-spacing: 1.6px;
+}
+.about-detail h5{
+  color: #000;
+  font-size: 18px;
+  text-transform: capitalize;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.about-detail p{
+  color: #8C8C8C;
+  font-size: 15px;
+  font-weight: bold;
+}
+.about-detail a{
+  display: inline-block;
+  text-decoration: none;
+  background-color: #319be6;
+  color: #fff;
+  padding: 20px 40px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  letter-spacing: 1.6px;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 30px;
+  position: relative;
+  z-index: 2;
+}
+.about-detail a::before{
+  content: "";
+  background: linear-gradient(135deg, #16c0f0 0%, #319be6 100%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  z-index: -1;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+  -moz-transform: translate(-50%, -50%) scale(0);
+  -o-transform: translate(-50%, -50%) scale(0);
+  -ms-transform: translate(-50%, -50%) scale(0);
+  transform: translate(-50%, -50%) scale(0);
+  -webkit-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -ms-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+.about-detail a:hover::before{
+  -webkit-transform: translate(-50%, -50%) scale(1);
+  -moz-transform: translate(-50%, -50%) scale(1);
+  -o-transform: translate(-50%, -50%) scale(1);
+  -ms-transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
+}
+.about-detail .full-detail{
+  padding: 15px;
+  background-color: rgba(0,0,0,0.8);
+  box-shadow: 0px 0px 10px #000;
+}
+.about-detail .full-detail p{
+  position: relative;
+  padding-left: 40px;
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+}
+.about-detail .full-detail p:first-child{
+  margin-top: 0;
+}
+.about-detail .full-detail img{
+  position: absolute;
+  left: 0;
+  transform: rotate(0deg) translateY(0);
+}
+/* ================================= service ======================================== */
+.service{
+  position: relative;
+  padding: 140px 0 60px;
+  background-color: #F7F7F7;
+}
+.service > svg{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  left: 0;
+}
+.service > svg *{
+  fill: #fff;
+}
+.service .four-box{
+  column-gap: 25px;
+}
+.service .service-box{
+  text-align: center;
+  background-color: #fff;
+  padding: 50px 25px;
+  cursor: pointer;
+  transition: 0.5s all;
+}
+.service .service-box i{
+  position: relative;
+  font-size: 35px;
+  color: #319be6;
+  transition: 0.5s all;
+  margin-bottom: 35px;
+  z-index: 1;
+}
+.service .service-box i::after{
+  content: "";
+  position: absolute;
+  height: 95px;
+  width: 95px;
+  background-color: #F7F7F7;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  margin: 0;
+  z-index: -1;
+  transition: 0.5s all;
+}
+.service .service-box h6{
+  margin: 10px 0;
+  font-size: 20px;
+  color: #000;
+  text-transform: capitalize;
+  letter-spacing: 1.6px;
+  font-weight: 600;
+}
+.service .service-box p{
+  font-size: 16px;
+  color: #434343;
+  letter-spacing: 1.2px;
+  font-weight: 400;
+}
+.service .service-box:hover{
+  box-shadow: 0px 0px 15px #000; 
+}
+.service .service-box:hover i{
+  transform: rotate(180deg);
+  color: #fff;
+}
+.service .service-box:hover i::after{
+  background-color: #319be6;
+}
