@@ -52,14 +52,14 @@ h2.title{
   outline: none;
   cursor: pointer;
   z-index: 999999;
-  transition: 1s all;
+  transition: 0.5s all;
 }
 .header .sidebar .menu-icon .bar{
   display: block;
   width: 28px;
   height: 2px;
   background-color: #16c0f0;
-  transition: 1s all;
+  transition: 0.5s all;
 }
 .header .sidebar .menu-icon .bar:first-child{
   width: 14px;
@@ -92,7 +92,7 @@ h2.title{
   box-shadow: 0 0 10px rgb(0 0 0 / 10%);
   padding: 85px 10px;
   list-style: none;
-  transition: 1s all;
+  transition: 0.5s all;
 }
 .sidebar.active .verticle-nav .menu-list {
   left: 0;
@@ -456,4 +456,53 @@ a.contact-btn:hover::before{
 #map {
   height: 400px;
   width: 100%;
+}
+/* ====================================== footer =========================================== */
+.footer{
+  padding: 140px 0 60px;
+  position: relative;
+  text-align: center;
+}
+.footer > svg{
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+.footer > svg *{
+  fill: #f7f7f7;
+}
+.footer h2{
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 800;
+  background-image: linear-gradient(45deg, #387199 20%, #16c0f0 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0 0 25px;
+}
+.footer a{
+  text-decoration: none;
+}
+.footer a:hover i{
+  color: #16c0f0;
+}
+.footer i{
+  position: relative;
+  font-size: 30px;
+  color: #fff;
+  margin: 0 25px;
+  transition: 0.3s all;
+}
+.footer i::after{
+  position: absolute;
+  content: "";
+  height: 60px;
+  width: 60px;
+  background-color: rgba(0,0,0,0.8);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: -1;
 }
