@@ -414,7 +414,6 @@ a.contact-btn:hover::before{
 .contact{
   position: relative;
   padding: 140px 0 60px;
-  background-color: #F7F7F7;
 }
 .contact .two-box{
   column-gap: 20px;
@@ -426,7 +425,7 @@ a.contact-btn:hover::before{
   top: 0;
 }
 .contact > svg *{
-  fill: #fff;
+  fill: #f7f7f7;
 }
 .contact .contact-detail{
   position: relative;
@@ -462,6 +461,7 @@ a.contact-btn:hover::before{
   padding: 140px 0 60px;
   position: relative;
   text-align: center;
+  background-color: #F7F7F7;
 }
 .footer > svg{
   position: absolute;
@@ -470,7 +470,7 @@ a.contact-btn:hover::before{
   top: 0;
 }
 .footer > svg *{
-  fill: #f7f7f7;
+  fill: #fff;
 }
 .footer h2{
   font-size: 30px;
@@ -493,6 +493,7 @@ a.contact-btn:hover::before{
   color: #fff;
   margin: 0 25px;
   transition: 0.3s all;
+  z-index: 1;
 }
 .footer i::after{
   position: absolute;
@@ -505,4 +506,58 @@ a.contact-btn:hover::before{
   transform: translate(-50%, -50%);
   border-radius: 50%;
   z-index: -1;
+}
+/* ==================================== testimonial ================================== */
+.testimonial{
+  padding: 140px 0 60px;
+  position: relative;
+  background-color: #F7F7F7;
+}
+.testimonial > svg{
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+.testimonial > svg *{
+  fill: #fff;
+}
+.testimonial .testimonial-box div{
+  text-align: center;
+}
+.testimonial .testimonial-box div p{
+  font-size: 16px;
+  color: #434343;
+  letter-spacing: 1.6px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.testimonial .testimonial-box div h2{
+  font-size: 18px;
+  color: #000;
+  font-weight: 700;
+  margin-top: 15px;
+}
+.testimonial .testimonial-box div img{
+  border-radius: 50%;
+  display: inline-block;
+}
+.testimonial ul.slick-dots{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+.testimonial ul.slick-dots li button{
+  background-color: #319be6;
+  color: transparent;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+.testimonial ul.slick-dots li.slick-active button{
+  border-color: black;
 }
