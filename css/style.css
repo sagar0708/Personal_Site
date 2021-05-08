@@ -21,6 +21,10 @@ img{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
+.three-box{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
 .four-box{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -58,18 +62,10 @@ img{
   margin-left: 14px;
 }
 .header .sidebar.active .menu-icon{
-  -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
 .header .sidebar.active .menu-icon .bar:first-child,
 .header .sidebar.active .menu-icon .bar:last-child{
-  -webkit-transform: rotate(-90deg) translateY(7px);
-  -moz-transform: rotate(-90deg) translateY(7px);
-  -ms-transform: rotate(-90deg) translateY(7px);
-  -o-transform: rotate(-90deg) translateY(7px);
   transform: rotate(-90deg) translateY(7px);
   margin-right: 0;
   margin-left: 0;
@@ -169,14 +165,14 @@ img{
   padding: 60px;
   position: relative;
 }
-.about svg{
+.about > svg{
   position: absolute;
   width: 100%;
   left: 0;
   top: 0;
   transform: rotate(180deg) translateY(100%);
 }
-.about svg *{
+.about > svg *{
   fill: #fff;
 }
 .about .tow-box-item:first-child{
@@ -244,22 +240,10 @@ img{
   height: 100%;
   border-radius: 50px;
   z-index: -1;
-  -webkit-transform: translate(-50%, -50%) scale(0);
-  -moz-transform: translate(-50%, -50%) scale(0);
-  -o-transform: translate(-50%, -50%) scale(0);
-  -ms-transform: translate(-50%, -50%) scale(0);
   transform: translate(-50%, -50%) scale(0);
-  -webkit-transition: all .4s ease-in-out;
-  -moz-transition: all .4s ease-in-out;
-  -o-transition: all .4s ease-in-out;
-  -ms-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
 }
 .about-detail a:hover::before{
-  -webkit-transform: translate(-50%, -50%) scale(1);
-  -moz-transform: translate(-50%, -50%) scale(1);
-  -o-transform: translate(-50%, -50%) scale(1);
-  -ms-transform: translate(-50%, -50%) scale(1);
   transform: translate(-50%, -50%) scale(1);
 }
 .about-detail .full-detail{
@@ -353,4 +337,80 @@ img{
 }
 .service .service-box:hover i::after{
   background-color: #319be6;
+}
+/*======================================= portfolio========================================== */
+.portfolio{
+  padding: 140px 0 60px;
+  position: relative;
+}
+.portfolio > svg{
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+.portfolio > svg *{
+  fill: #F7F7F7;
+}
+.portfolio .three-box{
+  column-gap: 15px;
+}
+.portfolio .gallary-box{
+  position: relative;
+  height: 250px;
+  cursor: pointer;
+}
+.portfolio .gallary-box::after{
+  position: absolute;
+  content: "";
+  height: 98%;
+  width: 98%;
+  background-color: rgba(255, 255, 255,0.8);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  border-radius: 5px;
+  transition: 0.5s all;
+}
+.portfolio .gallary-box p{
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+  font-weight: 700;
+  color: #000;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  z-index: 9999;
+  opacity: 0;
+  transition: 0.5s all;
+}
+.portfolio .gallary-box:hover::after{
+  transform: translate(-50%, -50%) scale(1);
+}
+.portfolio .gallary-box:hover p{
+  opacity: 1;
+}
+.portfolio .gallary-box img{
+  display: block;
+  height: 100%;
+  border-radius: 5px;
+}
+/*======================================= contact ========================================== */
+.contact{
+  position: relative;
+  padding: 140px 0 60px;
+  background-color: #F7F7F7;
+}
+.contact > svg{
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+.contact > svg *{
+  fill: #fff;
 }
