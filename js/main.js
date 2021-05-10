@@ -10,7 +10,9 @@ $(document).ready(function(){
     slidesToShow: 1,
     slidesToScroll: 1,
     dots: true,
-    arrows: false
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 2000,
   });
   $(".techno").infiniteslide({
     'speed': 50,
