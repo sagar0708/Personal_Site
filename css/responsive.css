@@ -44,6 +44,7 @@
   .hero{
     background-image: url('../images/mobile_bg.jpg');
     background-position: center;
+    height: 100vh;
   }
   .about-detail h6{
     margin-top: 15px;
