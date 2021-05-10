@@ -12,6 +12,10 @@ $(document).ready(function(){
     dots: true,
     arrows: false
   });
+  $(".techno").infiniteslide({
+    'speed': 50,
+    'pauseonhover':false
+  });
 });
 function myMap() {
   var myCenter = new google.maps.LatLng(21.502609,70.419346)
