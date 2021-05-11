@@ -56,12 +56,12 @@ $(document).ready(function(){
   gsap.registerPlugin(ScrollTrigger);
   var tl = gsap.timeline();
   tl.from(".hero",{duration:2, backgroundPosition: "-4000px 0px",ease: "back", delay:1})
-  tl.from(".hero .overlay",{duration:1, scale:0, ease: Linear.easeNone})
+  tl.from(".hero .overlay",{duration:1, scale:0, ease: Linear.easeNone},"<1.5")
   tl.from(".menu-icon",{duration:1, x:-200})
   tl.from(".intro .title-name",{duration: 2, x:-2000, ease:'bounce'})
-  tl.from(".intro .sub-title",{duration: 2, y:-1000, ease:'elastic'})
-  tl.from(".intro .profession-title",{duration: 1, opacity:0, ease:'back'})
-  tl.from(".intro .contact-btn",{duration: 1.5, rotate:180, scale:0, ease:'back'})
+  tl.from(".intro .sub-title",{duration: 2, y:-1000, ease:'elastic'},"<1")
+  tl.from(".intro .profession-title",{duration: 1, opacity:0, ease:'back'},"<1")
+  tl.from(".intro .contact-btn",{duration: 1.5, rotate:180, scale:0, ease:'back'},"<.5")
   tl.from(".number-box h2", {
     duration: 1,
     opacity: 0,
