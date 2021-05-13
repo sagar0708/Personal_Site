@@ -56,6 +56,10 @@ $(document).ready(function(){
   
 });  
 
+function loader(){
+  gsap.from("body",1,{opacity:0}) 
+  $(".loader").fadeOut(2000);
+}
 function loaderIcons(){
   var tl = gsap.timeline();
   tl.to(".loader-icons .fa-star",1,{fontSize:60, ease:'bounce'});
