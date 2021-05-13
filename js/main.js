@@ -1,9 +1,9 @@
-$("body").on("load", function(){
+$(window).on("load", function(){
   console.log("hellllllo")
   loaderIcons();
 })
 $(document).ready(function(){
-  $(".loader").fadeOut(2000);
+  $(".loader").fadeOut(1000);
   $(".menu-icon").on("click", function(){
     $(".sidebar").toggleClass("active");
   });

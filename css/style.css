@@ -55,6 +55,7 @@ h2.title{
   display: flex;
   align-items: center;
   justify-content: center;
+  position: fixed;
 }
 .loader i{
   position: absolute;
