@@ -1,12 +1,4 @@
-loaderIcons();
-function loader(){
-  gsap.from("body",1,{opacity:0})
-    
-  $(".loader").fadeOut(2000);
-}
-
 $(document).ready(function(){
-
   $(".menu-icon").on("click", function(){
     $(".sidebar").toggleClass("active");
   });
