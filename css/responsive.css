@@ -1,4 +1,7 @@
 @media screen and (max-width:991px){
+  .cursor-follower{
+    display: none;
+  }
   h2.title{
     font-size: 45px;
   }
