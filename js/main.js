@@ -1,4 +1,9 @@
+$("body").on("load", function(){
+  console.log("hellllllo")
+  loaderIcons();
+})
 $(document).ready(function(){
+  $(".loader").fadeOut(2000);
   $(".menu-icon").on("click", function(){
     $(".sidebar").toggleClass("active");
   });
@@ -55,6 +60,18 @@ $(document).ready(function(){
   // GSAP effect
   
 });  
+
+function loaderIcons(){
+  var tl = gsap.timeline();
+  tl.to(".loader-icons .fa-star",1,{fontSize:60, ease:'bounce'});
+  tl.to(".loader-icons .fa-star",0,{fontSize:0, ease:'bounce'});
+  tl.to(".loader-icons .fa-thumbs-up",1,{fontSize:60, ease:'elastic'});
+  tl.to(".loader-icons .fa-thumbs-up",0,{fontSize:0, ease:'bounce'});
+  tl.to(".loader-icons .fa-heart",1,{fontSize:60, ease:'back'});
+  tl.to(".loader-icons .fa-heart",0,{fontSize:0, ease:'bounce'});
+  tl.to(".loader-icons .fa-comment",1,{fontSize:60, ease:'bounce', onComplete: loaderIcons});
+  tl.to(".loader-icons .fa-comment",0,{fontSize:0, ease:'bounce'});
+}
 // Google Map
 function myMap() {
   var myCenter = new google.maps.LatLng(21.502609,70.419346)
