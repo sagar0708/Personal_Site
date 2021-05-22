@@ -1,3 +1,18 @@
+function loader(){
+  gsap.from(".body",1,{opacity:0}) 
+  $(".loader").fadeOut(2000);
+}
+// Google Map
+function myMap() {
+  var myCenter = new google.maps.LatLng(21.502609,70.419346)
+  var mapProp= {
+    center:myCenter,
+    zoom:5,
+  };
+  var map = new google.maps.Map(document.getElementById("map"),mapProp);
+  var marker = new google.maps.Marker({position: myCenter});
+  marker.setMap(map); 
+}
 $(document).ready(function(){
   $(".menu-icon").on("click", function(){
     $(".sidebar").toggleClass("active");
@@ -30,7 +45,6 @@ $(document).ready(function(){
     onRepeat: function() {
       posX += (mouseX - posX) / 8;
       posY += (mouseY - posY) / 8;
-  
       TweenMax.set(follower, {
         css: {
         left: posX - 8,
@@ -43,7 +57,6 @@ $(document).ready(function(){
     mouseX = e.clientX;
     mouseY = e.clientY;
   });
-
   // Typing effect
   var typed = new Typed(".profession-title > span",{
     strings: ['frontend developer', 'freelancer', 'web designer', 'web developer'],
@@ -51,24 +64,4 @@ $(document).ready(function(){
     backSpeed: 50,
     loop: true
   })
-
-  // GSAP effect
-  
 });  
-
-function loader(){
-  gsap.from("body",1,{opacity:0}) 
-  $(".loader").fadeOut(2000);
-}
-
-// Google Map
-function myMap() {
-  var myCenter = new google.maps.LatLng(21.502609,70.419346)
-  var mapProp= {
-    center:myCenter,
-    zoom:5,
-  };
-  var map = new google.maps.Map(document.getElementById("map"),mapProp);
-  var marker = new google.maps.Marker({position: myCenter});
-  marker.setMap(map); 
-}

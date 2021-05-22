@@ -9,10 +9,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" />
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body onload="loader()">
-  <!-- cursor-follower -->
-  <div class="cursor-follower"></div>
   <!-- pre-loader -->
   <div class="loader">
     <div class="loader-icons">
@@ -22,276 +22,278 @@
       <i class="fas fa-comment"></i>
     </div>
   </div>
-  <!-- header -->
-  <header class="header">
-    <div class="sidebar">
-      <button class="menu-icon">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </button>
-      <nav class="verticle-nav">
-        <ul class="menu-list">
-          <li>
-            <a href="#">home</a>
-          </li>
-          <li>
-            <a href="#about">about</a>
-          </li>
-          <li>
-            <a href="#portfolio">portfolio</a>
-          </li>
-          <li>
-            <a href="#contact">contact</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  <!-- hero -->
-  <section class="hero">
-    <div class="container">
-      <div class="overlay"></div>
-      <div class="intro">
-        <span class="sub-title">hey, my name is</span>
-        <h1 class="title-name">sagar chandresha</h1>
-        <p class="profession-title">I am <span></span></p>
-        <a href="#contact" class="contact-btn">contact me</a>
+  <div class="body">
+    <!-- cursor-follower -->
+    <div class="cursor-follower"></div>
+    
+    <!-- header -->
+    <header class="header">
+      <div class="sidebar">
+        <button class="menu-icon">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <nav class="verticle-nav">
+          <ul class="menu-list">
+            <li>
+              <a href="#">home</a>
+            </li>
+            <li>
+              <a href="#about">about</a>
+            </li>
+            <li>
+              <a href="#portfolio">portfolio</a>
+            </li>
+            <li>
+              <a href="#contact">contact</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-    </div>
-  </section>
-  <!-- about -->
-  <section class="about" id="about">
-    <svg class="wave" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 81.717" enable-background="new 0 0 1920 81.717" xml:space="preserve"><path d="M1920,0c0,0-109.246,46.107-316.333,67.334C1343.5,94,1137.095,77.238,999.167,67.5C854,57.25,637.662,24.697,541.709,18.834C375.334,8.666,147,11,0,37.875V0H1920L1920,0z"></path></svg>
-    <div class="container">
-      <h2 class="title">about me</h2>
-      <div class="about-me">
-        <div class="two-box">
-          <div class="tow-box-item">
-            <div class="about-img">
-              <img src="images/sagar.jpg" alt="about-img">
-            </div>
-          </div>
-          <div class="tow-box-item">
-            <div class="about-detail">
-              <h6>who am i</h6>
-              <h4>sagar chandresha</h4>
-              <div class="full-detail">
-                <p>
-                  <img src="images/user.svg" alt="">Sagar V. Chandresha
-                </p>
-                <p>
-                  <img src="images/email.svg" alt="">sagarchandresha0708@gmail.com
-                </p>
-                <p>
-                  <img src="images/phone-call.svg" alt="">+91 6353696870
-                </p>
-                <p>
-                  <img src="images/location.svg" alt="">Madhuram, Junagadh, Gujarat, India-362001
-                </p>
-                <p>
-                  <img src="images/students-cap.svg" alt="">Bachelor of Computer Application (B.C.A.)
-                </p>
+    </header>
+    <!-- hero -->
+    <section class="hero">
+      <div class="container">
+        <div class="overlay"></div>
+        <div class="intro">
+          <span class="sub-title">hey, my name is</span>
+          <h1 class="title-name">sagar chandresha</h1>
+          <p class="profession-title">I am <span></span></p>
+          <a href="#contact" class="contact-btn">contact me</a>
+        </div>
+      </div>
+    </section>
+    <!-- about -->
+    <section class="about" id="about">
+      <svg class="wave" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 81.717" enable-background="new 0 0 1920 81.717" xml:space="preserve"><path d="M1920,0c0,0-109.246,46.107-316.333,67.334C1343.5,94,1137.095,77.238,999.167,67.5C854,57.25,637.662,24.697,541.709,18.834C375.334,8.666,147,11,0,37.875V0H1920L1920,0z"></path></svg>
+      <div class="container">
+        <h2 class="title">about me</h2>
+        <div class="about-me">
+          <div class="two-box">
+            <div class="tow-box-item">
+              <div class="about-img">
+                <img src="images/sagar.jpg" alt="about-img">
               </div>
-              <a href="#contact" class="contact-btn">contact me</a>
+            </div>
+            <div class="tow-box-item">
+              <div class="about-detail">
+                <h6>who am i</h6>
+                <h4>sagar chandresha</h4>
+                <div class="full-detail">
+                  <p>
+                    <img src="images/user.svg" alt="">Sagar V. Chandresha
+                  </p>
+                  <p>
+                    <img src="images/email.svg" alt="">sagarchandresha0708@gmail.com
+                  </p>
+                  <p>
+                    <img src="images/phone-call.svg" alt="">+91 6353696870
+                  </p>
+                  <p>
+                    <img src="images/location.svg" alt="">Madhuram, Junagadh, Gujarat, India-362001
+                  </p>
+                  <p>
+                    <img src="images/students-cap.svg" alt="">Bachelor of Computer Application (B.C.A.)
+                  </p>
+                </div>
+                <a href="#contact" class="contact-btn">contact me</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- service -->
-  <section class="service" id="service">
-    <div class="container">
-      <h2 class="title">services</h2>
-      <div class="services">
-        <div class="four-box">
-          <div class="service-box">
-            <i class="fas fa-pencil-ruler"></i>
-            <h6>web design</h6>
-            <p>Nulla metus metus ullamcorper vel tincidunt sed euismod nibh Quisque volutpat</p>
-          </div>
-          <div class="service-box">
-            <i class="fab fa-connectdevelop"></i>
-            <h6>web developement</h6>
-            <p>Nulla metus metus ullamcorper vel tincidunt sed euismod nibh Quisque volutpat</p>
-          </div>
-          <div class="service-box">
-            <i class="fas fa-code"></i>
-            <h6>clean code</h6>
-            <p>Nulla metus metus ullamcorper vel tincidunt sed euismod nibh Quisque volutpat</p>
-          </div>
-          <div class="service-box">
-            <i class="far fa-life-ring"></i>
-            <h6>quick support</h6>
-            <p>Nulla metus metus ullamcorper vel tincidunt sed euismod nibh Quisque volutpat</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <svg class="wave" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 81.717" enable-background="new 0 0 1920 81.717" xml:space="preserve"><path d="M1920,0c0,0-109.246,46.107-316.333,67.334C1343.5,94,1137.095,77.238,999.167,67.5C854,57.25,637.662,24.697,541.709,18.834C375.334,8.666,147,11,0,37.875V0H1920L1920,0z"></path></svg>
-  </section>
-  <!-- portfolio -->
-  <section class="portfolio" id="portfolio">
-    <div class="container">
-      <h2 class="title">portfolio</h2>
-      <div class="portfolio-gallary">
-        <div class="three-box">
-          <div class="gallary-box">
-            <a href="http://artvilladesign.ml/" target="_blank">
-              <img src="images/portfolio-1.png" alt="">
-              <p>Art villa digital Studio</p>
-            </a>
-          </div>
-          <div class="gallary-box">
-            <a href="https://sagar0708.github.io/bs-sagar-food-site/" target="_blank">
-              <img src="images/portfolio-2.png" alt="">
-              <p>Restaurent Website</p>
-            </a>
-          </div>
-          <div class="gallary-box">
-            <a href="http://artvilladesign.ml/" target="_blank">
-              <img src="images/portfolio-1.png" alt="">
-              <p>Art villa digital Studio</p>
-            </a>
+    </section>
+    <!-- service -->
+    <section class="service" id="service">
+      <div class="container">
+        <h2 class="title">services</h2>
+        <div class="services">
+          <div class="four-box">
+            <div class="service-box">
+              <i class="fas fa-pencil-ruler"></i>
+              <h6>web design</h6>
+              <p>Nulla metus metus ullamcorper vel tincidunt sed euismod nibh Quisque volutpat</p>
+            </div>
+            <div class="service-box">
+              <i class="fab fa-connectdevelop"></i>
+              <h6>web developement</h6>
+              <p>Nulla metus metus ullamcorper vel tincidunt sed euismod nibh Quisque volutpat</p>
+            </div>
+            <div class="service-box">
+              <i class="fas fa-code"></i>
+              <h6>clean code</h6>
+              <p>Nulla metus metus ullamcorper vel tincidunt sed euismod nibh Quisque volutpat</p>
+            </div>
+            <div class="service-box">
+              <i class="far fa-life-ring"></i>
+              <h6>quick support</h6>
+              <p>Nulla metus metus ullamcorper vel tincidunt sed euismod nibh Quisque volutpat</p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <svg class="wave" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 81.717" enable-background="new 0 0 1920 81.717" xml:space="preserve"><path d="M1920,0c0,0-109.246,46.107-316.333,67.334C1343.5,94,1137.095,77.238,999.167,67.5C854,57.25,637.662,24.697,541.709,18.834C375.334,8.666,147,11,0,37.875V0H1920L1920,0z"></path></svg>
-  </section>
-  <!-- technology -->
-  <section class="technologies">
-    <h2 class="title">Technologies</h2>
-    <ul class="techno">
-      <li><i class="fab fa-shopify"></i></li>
-      <li><i class="fab fa-html5"></i></li>
-      <li><i class="fab fa-css3-alt"></i></li>
-      <li><i class="fab fa-js"></i></li>
-      <li><i class="fab fa-sass"></i></li>
-      <li><i class="fab fa-react"></i></li>
-      <li><i class="fab fa-bootstrap"></i></li>
-      <li><i class="fab fa-python"></i></li> 
-      <li><i class="fab fa-shopify"></i></li>
-      <li><i class="fab fa-html5"></i></li>
-      <li><i class="fab fa-css3-alt"></i></li>  
-      <li><i class="fab fa-js"></i></li>
-      <li><i class="fab fa-sass"></i></li>
-      <li><i class="fab fa-react"></i></li>
-      <li><i class="fab fa-bootstrap"></i></li>
-      <li><i class="fab fa-python"></i></li>   
-    </ul>
-    <svg class="wave" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 81.717" enable-background="new 0 0 1920 81.717" xml:space="preserve"><path d="M1920,0c0,0-109.246,46.107-316.333,67.334C1343.5,94,1137.095,77.238,999.167,67.5C854,57.25,637.662,24.697,541.709,18.834C375.334,8.666,147,11,0,37.875V0H1920L1920,0z"></path></svg>
-  </section>
-  <!-- numbers -->
-  <section class="numbers">
-    <div class="container">
-      <h2 class="title">Numbers</h2>
-      <div class="number-box">
-        <h2>50+</h2>
-        <p>projects done</p>
-      </div>
-      <div class="number-box">
-        <h2>5000+</h2>
-        <p>lines of code</p>
-      </div>
-      <div class="number-box">
-        <h2>20+</h2>
-        <p>happy clients</p>
-      </div>
-      <div class="number-box">
-        <h2>2+</h2>
-        <p>coding experience</p>
-      </div>
-    </div>
-    <svg class="wave" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 81.717" enable-background="new 0 0 1920 81.717" xml:space="preserve"><path d="M1920,0c0,0-109.246,46.107-316.333,67.334C1343.5,94,1137.095,77.238,999.167,67.5C854,57.25,637.662,24.697,541.709,18.834C375.334,8.666,147,11,0,37.875V0H1920L1920,0z"></path></svg>
-  </section>
-  <!-- testimonial -->
-  <section class="testimonial" id="testimonial">
-    <div class="container">
-      <h2 class="title">testimonials</h2>
-      <div class="testimonials slider">
-        <div class="testimonial-box">
-          <div>
-            <p>Nulla metus metus ullamcorper vel tincidunt sed euismod nibh Quisque volutpat</p>
-            <img src="images/testimonial_img.jpg" alt="testimonial_img">
-            <h2>cristina jordan</h2>
-          </div>
-        </div>
-        <div class="testimonial-box">
-          <div>
-            <p>Nulla metus metus ullamcorper vel tincidunt sed euismod nibh Quisque volutpat</p>
-            <img src="images/testimonial_img.jpg" alt="testimonial_img">
-            <h2>cristina jordan</h2>
-          </div>
-        </div>
-        <div class="testimonial-box">
-          <div>
-            <p>Nulla metus metus ullamcorper vel tincidunt sed euismod nibh Quisque volutpat</p>
-            <img src="images/testimonial_img.jpg" alt="testimonial_img">
-            <h2>cristina jordan</h2>
+      <svg class="wave" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 81.717" enable-background="new 0 0 1920 81.717" xml:space="preserve"><path d="M1920,0c0,0-109.246,46.107-316.333,67.334C1343.5,94,1137.095,77.238,999.167,67.5C854,57.25,637.662,24.697,541.709,18.834C375.334,8.666,147,11,0,37.875V0H1920L1920,0z"></path></svg>
+    </section>
+    <!-- portfolio -->
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+        <h2 class="title">portfolio</h2>
+        <div class="portfolio-gallary">
+          <div class="three-box">
+            <div class="gallary-box">
+              <a href="http://artvilladesign.ml/" target="_blank">
+                <img src="images/portfolio-1.png" alt="">
+                <p>Art villa digital Studio</p>
+              </a>
+            </div>
+            <div class="gallary-box">
+              <a href="https://sagar0708.github.io/bs-sagar-food-site/" target="_blank">
+                <img src="images/portfolio-2.png" alt="">
+                <p>Restaurent Website</p>
+              </a>
+            </div>
+            <div class="gallary-box">
+              <a href="http://artvilladesign.ml/" target="_blank">
+                <img src="images/portfolio-1.png" alt="">
+                <p>Art villa digital Studio</p>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <svg class="wave" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 81.717" enable-background="new 0 0 1920 81.717" xml:space="preserve"><path d="M1920,0c0,0-109.246,46.107-316.333,67.334C1343.5,94,1137.095,77.238,999.167,67.5C854,57.25,637.662,24.697,541.709,18.834C375.334,8.666,147,11,0,37.875V0H1920L1920,0z"></path></svg>
-  </section>
-  <!-- contact -->
-  <section class="contact" id="contact">
-    <div class="container">
-      <h2 class="title">contact me</h2>
-      <div class="contact-me">
-        <div class="two-box">
-          <div class="contact-map">
-            <div id="map">
+      <svg class="wave" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 81.717" enable-background="new 0 0 1920 81.717" xml:space="preserve"><path d="M1920,0c0,0-109.246,46.107-316.333,67.334C1343.5,94,1137.095,77.238,999.167,67.5C854,57.25,637.662,24.697,541.709,18.834C375.334,8.666,147,11,0,37.875V0H1920L1920,0z"></path></svg>
+    </section>
+    <!-- technology -->
+    <section class="technologies">
+      <h2 class="title">Technologies</h2>
+      <ul class="techno">
+        <li><i class="fab fa-shopify"></i></li>
+        <li><i class="fab fa-html5"></i></li>
+        <li><i class="fab fa-css3-alt"></i></li>
+        <li><i class="fab fa-js"></i></li>
+        <li><i class="fab fa-sass"></i></li>
+        <li><i class="fab fa-react"></i></li>
+        <li><i class="fab fa-bootstrap"></i></li>
+        <li><i class="fab fa-python"></i></li> 
+        <li><i class="fab fa-shopify"></i></li>
+        <li><i class="fab fa-html5"></i></li>
+        <li><i class="fab fa-css3-alt"></i></li>  
+        <li><i class="fab fa-js"></i></li>
+        <li><i class="fab fa-sass"></i></li>
+        <li><i class="fab fa-react"></i></li>
+        <li><i class="fab fa-bootstrap"></i></li>
+        <li><i class="fab fa-python"></i></li>   
+      </ul>
+      <svg class="wave" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 81.717" enable-background="new 0 0 1920 81.717" xml:space="preserve"><path d="M1920,0c0,0-109.246,46.107-316.333,67.334C1343.5,94,1137.095,77.238,999.167,67.5C854,57.25,637.662,24.697,541.709,18.834C375.334,8.666,147,11,0,37.875V0H1920L1920,0z"></path></svg>
+    </section>
+    <!-- numbers -->
+    <section class="numbers">
+      <div class="container">
+        <h2 class="title">Numbers</h2>
+        <div class="number-box">
+          <h2>50+</h2>
+          <p>projects done</p>
+        </div>
+        <div class="number-box">
+          <h2>5000+</h2>
+          <p>lines of code</p>
+        </div>
+        <div class="number-box">
+          <h2>20+</h2>
+          <p>happy clients</p>
+        </div>
+        <div class="number-box">
+          <h2>2+</h2>
+          <p>coding experience</p>
+        </div>
+      </div>
+      <svg class="wave" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 81.717" enable-background="new 0 0 1920 81.717" xml:space="preserve"><path d="M1920,0c0,0-109.246,46.107-316.333,67.334C1343.5,94,1137.095,77.238,999.167,67.5C854,57.25,637.662,24.697,541.709,18.834C375.334,8.666,147,11,0,37.875V0H1920L1920,0z"></path></svg>
+    </section>
+    <!-- testimonial -->
+    <section class="testimonial" id="testimonial">
+      <div class="container">
+        <h2 class="title">testimonials</h2>
+        <div class="testimonials slider">
+          <div class="testimonial-box">
+            <div>
+              <p>Nulla metus metus ullamcorper vel tincidunt sed euismod nibh Quisque volutpat</p>
+              <img src="images/testimonial_img.jpg" alt="testimonial_img">
+              <h2>cristina jordan</h2>
+            </div>
+          </div>
+          <div class="testimonial-box">
+            <div>
+              <p>Nulla metus metus ullamcorper vel tincidunt sed euismod nibh Quisque volutpat</p>
+              <img src="images/testimonial_img.jpg" alt="testimonial_img">
+              <h2>cristina jordan</h2>
+            </div>
+          </div>
+          <div class="testimonial-box">
+            <div>
+              <p>Nulla metus metus ullamcorper vel tincidunt sed euismod nibh Quisque volutpat</p>
+              <img src="images/testimonial_img.jpg" alt="testimonial_img">
+              <h2>cristina jordan</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <svg class="wave" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 81.717" enable-background="new 0 0 1920 81.717" xml:space="preserve"><path d="M1920,0c0,0-109.246,46.107-316.333,67.334C1343.5,94,1137.095,77.238,999.167,67.5C854,57.25,637.662,24.697,541.709,18.834C375.334,8.666,147,11,0,37.875V0H1920L1920,0z"></path></svg>
+    </section>
+    <!-- contact -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <h2 class="title">contact me</h2>
+        <div class="contact-me">
+          <div class="two-box">
+            <div class="contact-map">
+              <div id="map">
 
+              </div>
             </div>
-          </div>
-          <div class="contact-detail">
-            <h6>phone :</h6>
-            <p>+91 6353696870</p>
-            <h6>address :</h6>
-            <p>Madhuram, junagadh, gujarat, india-362001</p>
-            <h6>email :</h6>
-            <p>sagarchandresha0708@gmail.com</p>
+            <div class="contact-detail">
+              <h6>phone :</h6>
+              <p>+91 6353696870</p>
+              <h6>address :</h6>
+              <p>Madhuram, junagadh, gujarat, india-362001</p>
+              <h6>email :</h6>
+              <p>sagarchandresha0708@gmail.com</p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <svg class="wave" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 81.717" enable-background="new 0 0 1920 81.717" xml:space="preserve"><path d="M1920,0c0,0-109.246,46.107-316.333,67.334C1343.5,94,1137.095,77.238,999.167,67.5C854,57.25,637.662,24.697,541.709,18.834C375.334,8.666,147,11,0,37.875V0H1920L1920,0z"></path></svg>
-  </section>
-  <!-- footer -->
-  <footer id="footer" class="footer">
-    <h2>Sagar Chandresha</h2>
-    <a href="https://www.facebook.com/sagar.chandresha.50" target="_blank"><i class="fab fa-facebook"></i></a>
-    <a href="https://twitter.com/Sagar25405438?s=09" target="_blank"><i class="fab fa-twitter"></i></a>
-    <a href="https://www.linkedin.com/in/sagar-chandresha-a6b4b21a6" target="_blank"><i class="fab fa-linkedin"></i></a>
-    <a href="https://www.instagram.com/sagar_chandresha_/" target="_blank"><i class="fab fa-instagram"></i></a>
-    <a href="https://github.com/sagar0708" target="_blank"><i class="fab fa-github"></i></a>
-    <a href="https://wa.link/bk8l4o" target="_blank"><i class="fab fa-whatsapp"></i></a>
-    <svg class="wave" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 81.717" enable-background="new 0 0 1920 81.717" xml:space="preserve"><path d="M1920,0c0,0-109.246,46.107-316.333,67.334C1343.5,94,1137.095,77.238,999.167,67.5C854,57.25,637.662,24.697,541.709,18.834C375.334,8.666,147,11,0,37.875V0H1920L1920,0z"></path></svg>
-  </footer>
+      <svg class="wave" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 81.717" enable-background="new 0 0 1920 81.717" xml:space="preserve"><path d="M1920,0c0,0-109.246,46.107-316.333,67.334C1343.5,94,1137.095,77.238,999.167,67.5C854,57.25,637.662,24.697,541.709,18.834C375.334,8.666,147,11,0,37.875V0H1920L1920,0z"></path></svg>
+    </section>
+    <!-- footer -->
+    <footer id="footer" class="footer">
+      <h2>Sagar Chandresha</h2>
+      <a href="https://www.facebook.com/sagar.chandresha.50" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://twitter.com/Sagar25405438?s=09" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.linkedin.com/in/sagar-chandresha-a6b4b21a6" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.instagram.com/sagar_chandresha_/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://github.com/sagar0708" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://wa.link/bk8l4o" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <svg class="wave" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 81.717" enable-background="new 0 0 1920 81.717" xml:space="preserve"><path d="M1920,0c0,0-109.246,46.107-316.333,67.334C1343.5,94,1137.095,77.238,999.167,67.5C854,57.25,637.662,24.697,541.709,18.834C375.334,8.666,147,11,0,37.875V0H1920L1920,0z"></path></svg>
+    </footer>
   <!-- scripts -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script>
-    function loaderIcons(){
-      var tl = gsap.timeline();
-      tl.to(".loader-icons .fa-star",1,{fontSize:60, ease:'bounce'});
-      tl.to(".loader-icons .fa-star",0,{fontSize:0, ease:'bounce'});
-      tl.to(".loader-icons .fa-thumbs-up",1,{fontSize:60, ease:'elastic'});
-      tl.to(".loader-icons .fa-thumbs-up",0,{fontSize:0, ease:'bounce'});
-      tl.to(".loader-icons .fa-heart",1,{fontSize:60, ease:'back'});
-      tl.to(".loader-icons .fa-heart",0,{fontSize:0, ease:'bounce'});
-      tl.to(".loader-icons .fa-comment",1,{fontSize:60, ease:'bounce', onComplete: loaderIcons});
-      tl.to(".loader-icons .fa-comment",0,{fontSize:0, ease:'bounce'});
-    }
-    loaderIcons();
-  </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="js/infiniteslidev2.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" integrity="sha512-3J8teBiHrSyaaRBajZyIEtpDsXdPq1gsznKWIVb5CnorQuFhjWGhWe54z8YNnHHr7MZuExb9m5kvf964HiT1Sw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="js/main.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSMfnKZbyyqbdoZeRBlwtq9iMW_rL29ck&callback=myMap"></script>
 </body>
+<script>
+  loaderIcons()
+  function loaderIcons(){
+    var tl = gsap.timeline();
+    tl.to(".loader-icons .fa-star",1,{fontSize:60, ease:'bounce'});
+    tl.to(".loader-icons .fa-star",0,{fontSize:0, ease:'bounce'});
+    tl.to(".loader-icons .fa-thumbs-up",1,{fontSize:60, ease:'elastic'});
+    tl.to(".loader-icons .fa-thumbs-up",0,{fontSize:0, ease:'bounce'});
+    tl.to(".loader-icons .fa-heart",1,{fontSize:60, ease:'back'});
+    tl.to(".loader-icons .fa-heart",0,{fontSize:0, ease:'bounce'});
+    tl.to(".loader-icons .fa-comment",1,{fontSize:60, ease:'bounce', onComplete: loaderIcons});
+    tl.to(".loader-icons .fa-comment",0,{fontSize:0, ease:'bounce'});
+  }
+</script>
 </html>
