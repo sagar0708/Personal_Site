@@ -275,8 +275,6 @@
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/gsap.min.js"></script>
   <script>
-    loaderIcons();
-    setTimeout(
     function loaderIcons(){
       var tl = gsap.timeline();
       tl.to(".loader-icons .fa-star",1,{fontSize:60, ease:'bounce'});
@@ -287,7 +285,9 @@
       tl.to(".loader-icons .fa-heart",0,{fontSize:0, ease:'bounce'});
       tl.to(".loader-icons .fa-comment",1,{fontSize:60, ease:'bounce', onComplete: loaderIcons});
       tl.to(".loader-icons .fa-comment",0,{fontSize:0, ease:'bounce'});
-    },1000)
+    }
+    loaderIcons();
+    
   </script>
   <script src="js/slick.min.js"></script>
   <script src="js/infiniteslidev2.js"></script>
