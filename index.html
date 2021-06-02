@@ -275,25 +275,25 @@
       <a href="https://wa.link/bk8l4o" target="_blank"><i class="fab fa-whatsapp"></i></a>
       <svg class="wave" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 81.717" enable-background="new 0 0 1920 81.717" xml:space="preserve"><path d="M1920,0c0,0-109.246,46.107-316.333,67.334C1343.5,94,1137.095,77.238,999.167,67.5C854,57.25,637.662,24.697,541.709,18.834C375.334,8.666,147,11,0,37.875V0H1920L1920,0z"></path></svg>
     </footer>
+</body>
+  <script>
+    loaderIcons()
+    function loaderIcons(){
+      var tl = gsap.timeline();
+      tl.to(".loader-icons .fa-star",1,{fontSize:60, ease:'bounce'});
+      tl.to(".loader-icons .fa-star",0,{fontSize:0, ease:'bounce'});
+      tl.to(".loader-icons .fa-thumbs-up",1,{fontSize:60, ease:'elastic'});
+      tl.to(".loader-icons .fa-thumbs-up",0,{fontSize:0, ease:'bounce'});
+      tl.to(".loader-icons .fa-heart",1,{fontSize:60, ease:'back'});
+      tl.to(".loader-icons .fa-heart",0,{fontSize:0, ease:'bounce'});
+      tl.to(".loader-icons .fa-comment",1,{fontSize:60, ease:'bounce', onComplete: loaderIcons});
+      tl.to(".loader-icons .fa-comment",0,{fontSize:0, ease:'bounce'});
+    }
+  </script>
   <!-- scripts -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="js/infiniteslidev2.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" integrity="sha512-3J8teBiHrSyaaRBajZyIEtpDsXdPq1gsznKWIVb5CnorQuFhjWGhWe54z8YNnHHr7MZuExb9m5kvf964HiT1Sw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="js/main.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSMfnKZbyyqbdoZeRBlwtq9iMW_rL29ck&callback=myMap"></script>
-</body>
-<script>
-  loaderIcons()
-  function loaderIcons(){
-    var tl = gsap.timeline();
-    tl.to(".loader-icons .fa-star",1,{fontSize:60, ease:'bounce'});
-    tl.to(".loader-icons .fa-star",0,{fontSize:0, ease:'bounce'});
-    tl.to(".loader-icons .fa-thumbs-up",1,{fontSize:60, ease:'elastic'});
-    tl.to(".loader-icons .fa-thumbs-up",0,{fontSize:0, ease:'bounce'});
-    tl.to(".loader-icons .fa-heart",1,{fontSize:60, ease:'back'});
-    tl.to(".loader-icons .fa-heart",0,{fontSize:0, ease:'bounce'});
-    tl.to(".loader-icons .fa-comment",1,{fontSize:60, ease:'bounce', onComplete: loaderIcons});
-    tl.to(".loader-icons .fa-comment",0,{fontSize:0, ease:'bounce'});
-  }
-</script>
 </html>
